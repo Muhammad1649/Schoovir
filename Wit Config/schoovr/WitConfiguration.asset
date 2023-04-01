@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
+  m_Name: WitConfiguration
+  m_EditorClassIdentifier: 
+  application:
+    witConfiguration: {fileID: 0}
+    name: schoovr
+    id: 488245499586112
+    lang: en
+    isPrivate: 1
+    createdAt: 2021-11-21T02:26:27-0800
+  configId: 183515f9dc8244c42bd063a731ed2442
+  clientAccessToken: YYFIJEAEY4ZH2BGLFT5Q6X7DTIGS2OWT
+  timeoutMS: 10000
+  endpointConfiguration:
+    uriScheme: 
+    authority: 
+    port: 0
+    witApiVersion: 
+    speech: 
+    message: 
+  entities:
+  - witConfiguration: {fileID: 11400000}
+    id: 741972123441270
+    name: mode
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - 
+    keywords:
+    - keyword: done
+      synonyms:
+      - done
+    - keyword: i
+      synonyms:
+      - i
+    - keyword: learn
+      synonyms:
+      - learn
+    - keyword: next
+      synonyms:
+      - next
+    - keyword: ok
+      synonyms:
+      - ok
+    - keyword: practice
+      synonyms:
+      - practice
+    - keyword: proceed
+      synonyms:
+      - proceed
+  intents:
+  - witConfiguration: {fileID: 11400000}
+    id: 1227698917734298
+    name: assistant_set_experiment
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 989745974942106
+    name: assistant_set_mode
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 660162112023122
+      name: mode:mode
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 1084761395602598
+    name: assistant_setup
+    entities: []
+  - witConfiguration: {fileID: 11400000}
+    id: 1347262025705969
+    name: user_response
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 660162112023122
+      name: mode:mode
+      lookups: []
+      roles: []
+      keywords: []
+  traits: []
